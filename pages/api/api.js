@@ -57,6 +57,20 @@ Page({
     wx.enableAlertBeforeUnload({
       message: 'message',
     })
+    wx.setNavigationBarTitle({
+      title: 'api-动态'
+    })
+    wx.showNavigationBarLoading({
+    })
+    setTimeout(() => {
+      wx.hideNavigationBarLoading()
+    }, 1500);
+    wx.setNavigationBarColor({
+      backgroundColor: '#008ac5',
+      frontColor: '#ffffff',
+    })
+    wx.hideHomeButton({
+    })
   },
 
   
