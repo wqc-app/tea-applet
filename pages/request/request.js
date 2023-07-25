@@ -34,6 +34,9 @@ Page({
         this.setData({
           catList : this.data.catList
         })
+       
+      },
+      complete : res=>{
         wx.stopPullDownRefresh();
       }
     })
