@@ -16,13 +16,28 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }]
+    "color": "#707070",
+    "selectedColor": "#55cd5a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/imgs/tabBar/home.png",
+        "selectedIconPath": "/static/imgs/tabBar/home-fill.png"
+      }, 
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "/static/imgs/tabBar/store.png",
+        "selectedIconPath": "/static/imgs/tabBar/store-fill.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "评论",
+        "iconPath": "/static/imgs/tabBar/message.png",
+        "selectedIconPath": "/static/imgs/tabBar/message-fill.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -17,6 +17,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  jumpDemo(){
+    wx.navigateTo({
+      url: '/pages/demo/demo',
+    })
+  },
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({

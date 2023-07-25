@@ -5,9 +5,10 @@
 
 </view>
 
-<navigator url="/pages/logs/logs" open-type="switchTab">
+<navigator url="/pages/logs/logs" open-type="reLaunch">
   <text>go to logs</text>
 </navigator>
+<view bindtap="jumpDemo">jumpDemo</view>
 
 <text>111</text>
 <text user-select space="nbsp" >2  2   2     2</text>

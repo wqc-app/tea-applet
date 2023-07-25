@@ -6,7 +6,7 @@ Page({
    */
   data: {
     id : 1,
-    title : "demo",
+    title : "评论",
     content : "",
     bookList : [
       {
