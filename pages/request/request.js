@@ -20,7 +20,6 @@ Page({
       url: 'https://api.thecatapi.com/v1/images/search?limit=2',
       method : "get",
       success : res=>{
-        this.data.catList = [];
         console.log('getData()' , res);
         let data =  res.data;
         for (let i = 0; i < data.length; i++) {
@@ -38,6 +37,7 @@ Page({
       },
       complete : res=>{
         wx.stopPullDownRefresh();
+        wx.hideNavigationBarLoading()
       }
     })
   },
@@ -74,7 +74,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    console.log(111);
+    this.data.catList = [];
     this.getData()
   },
 
@@ -82,7 +82,9 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    console.log('底部');
+    wx.showNavigationBarLoading()
+    this.getData()
   },
 
   /**
