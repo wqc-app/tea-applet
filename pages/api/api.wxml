@@ -1,0 +1,6 @@
+
+<button type="primary" bindtap="showToast">showToast</button>
+<button type="primary" bindtap="showModal">showModal</button>
+<button type="primary" bindtap="showLoading">showLoading</button>
+<button type="primary" bindtap="showActionSheet">showActionSheet</button>
+<input type="text"/>

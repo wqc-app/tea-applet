@@ -1,0 +1,9 @@
+button{
+  margin: 20rpx auto;
+}
+
+input{
+  padding: 20rpx; 
+  background: #eee; 
+  margin: 20rpx;
+}

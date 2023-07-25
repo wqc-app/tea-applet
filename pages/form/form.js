@@ -15,7 +15,7 @@ Page({
       },
       {
         id : "2",
-        name : "三国演技",
+        name : "三国演义",
       },
       {
         id : "3",
@@ -29,11 +29,17 @@ Page({
   },
 
   deleteRow(e){
-    console.log('deleteRow' , e);
     let {index} = e.currentTarget.dataset;
-    this.data.bookList.splice(index, 1)
-    this.setData({
-      bookList : this.data.bookList
+    wx.showModal({
+      title: `确认删除"${this.data.bookList[index].name}"？`,
+      success : res=>{
+        if(res.confirm){
+          this.data.bookList.splice(index, 1)
+          this.setData({
+            bookList : this.data.bookList
+          })
+        }
+      }
     })
   },
 
@@ -49,6 +55,11 @@ Page({
         id : id,
         content : "",
         bookList : this.data.bookList
+      })
+      wx.showToast({
+        title: '提交成功！',
+        icon : "none",
+        image : "/static/imgs/ikun.jpg",
       })
   },
 
