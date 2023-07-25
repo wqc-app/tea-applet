@@ -1,0 +1,5 @@
+
+<view class="row" wx:for="{{catList}}">
+  <image  src="{{item.url}}" mode="aspectFill"></image>
+  <text>{{item.id}}</text>
+</view>

@@ -7,7 +7,8 @@
     "pages/data/data",
     "pages/event/event",
     "pages/form/form",
-    "pages/api/api"
+    "pages/api/api",
+    "pages/request/request"
   ],
   "window":{
     "backgroundTextStyle":"light",
