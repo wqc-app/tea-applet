@@ -1,0 +1,30 @@
+
+<view class="btn" bindtap="changePerson" data-selfname="ikun" data-selfage="16">click</view>
+<view class="content">{{name}} - {{age}}</view>
+
+<view class="box" style="width: {{size}}; height: {{size}}; background: {{color}}" bindtap="boxChange">box size : {{size}}</view>
+
+<button type="primary" 		open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button type="primary" 		open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button type="primary" 		open-type="openSetting" >openSetting</button>
+
+
+<input class="outInput" type="text" 	confirm-type="go"
+bindinput="onInput"
+bindfocus="onFocus"
+></input>
+<view>输入内容：{{content}}</view>
+
+<view>
+  <checkbox-group bindchange="onCheckBoxChange">
+    <label>
+      <checkbox value="readBook"></checkbox> readBook
+    </label>
+    <label>
+      <checkbox value="lookBook"></checkbox> lookBook
+    </label>
+    <label>
+      <checkbox value="writeBook"></checkbox> writeBook
+    </label>
+  </checkbox-group>
+</view>

@@ -1,0 +1,13 @@
+
+
+<navigator url="/pages/index/index" 	open-type="switchTab"> 
+  <image style="width: 200px; height: 200px;" src="https://mp-b0777c08-2385-45ae-afa7-139fa3ac893b.cdn.bspapp.com/ikun.jpg" mode="aspectFill"></image>
+</navigator>
+
+
+<image style="width: 200px; height: 200px;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="aspectFill"></image>
+
+<image style="width: 200px; height: 200px;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="aspectFit"></image>
+
+
+<image style="width: 200px; height: 200px;" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="top center" 	show-menu-by-longpress></image>

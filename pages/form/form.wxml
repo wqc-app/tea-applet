@@ -1,0 +1,16 @@
+<view class="title">{{title}}</view>
+
+<view class="box">
+  <view class="dataRow"wx:for="{{bookList}}" wx:for-index="index" wx:for-item="book">
+    {{index + 1}}. {{book.name}}
+    <icon type="clear" data-index="{{index}}" bindtap="deleteRow"></icon>
+  </view>
+  <view class="count" wx:if="{{bookList.length}}">{{bookList.length}}条评论</view>
+  <view class="nodata" wx:if="{{!bookList.length}}">暂无数据评论！</view>
+  <view class="comment">
+    <input class="commentInput" model:value="{{content}}"></input>
+    <button class="commentBtn" type="primary" disabled="{{!content.length}}" bindtap="submit">提交</button>
+  </view>
+</view>
+
+

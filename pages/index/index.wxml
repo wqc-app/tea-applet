@@ -1,0 +1,48 @@
+
+<view class="box" hover-class="boxHover" hover-start-time="0" hover-stay-time="200">
+
+  <view class="content" hover-class="contentHover" start-time="0" hover-stay-time="200" hover-stop-propagation></view>
+
+</view>
+
+<navigator url="/pages/logs/logs" open-type="switchTab">
+  <text>go to logs</text>
+</navigator>
+
+<text>111</text>
+<text user-select space="nbsp" >2  2   2     2</text>
+<text decode>&lt; 333 &gt;</text> 
+
+<icon type="success" size="50rpx" color="#000000"/>
+<view>----</view>
+<progress percent="60" show-info border-radius="30" stroke-width="2" color="red"></progress>
+
+<view style="width: 375rpx; height:375rpx; background-color: red;"></view>
+
+<scroll-view class="myScroll" 	scroll-x>
+  <view class="row">1</view>
+  <view class="row">2</view>
+  <view class="row">3</view>
+  <view class="row">4</view>
+  <view class="row">5</view>
+  <view class="row">6</view>
+  <view class="row">7</view>
+  <view class="row">8</view>
+</scroll-view>
+
+<movable-area style="width:400rpx; height:400rpx; background:#ccc; overflow: hidden;">
+  <movable-view style="width: 100rpx; height: 100rpx; background: green;" direction="all" x="20rpx" y="20rpx"  inertia out-of-bounds></movable-view>
+</movable-area>
+
+<match-media min-width="300" max-width="600">
+  <view>当页面宽度在 300 ~ 500 px 之间时展示这里</view>
+</match-media>
+
+<view class="out">
+  <view class="box1"></view>
+  <view class="box2">
+  <root-portal>
+    <!-- <view class="mask"></view> -->
+  </root-portal>
+  </view>
+</view>

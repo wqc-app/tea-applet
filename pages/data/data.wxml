@@ -1,0 +1,9 @@
+<view>
+  {{address}}
+</view>
+
+<view wx:if="{{num == 1}}">{{num}}</view>
+<view wx:elif="{{num == 2}}">{{num}}</view>
+<view wx:else>不匹配：{{num}}</view>
+
+<view wx:for="{{bookList}}" wx:for-index="index" wx:for-item="book" wx:key="index">{{index + 1}}: {{book}}</view>
