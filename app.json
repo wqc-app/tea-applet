@@ -8,7 +8,8 @@
     "pages/event/event",
     "pages/form/form",
     "pages/api/api",
-    "pages/request/request"
+    "pages/request/request",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,8 @@
+
+
+<view class="listContainer">
+  <view class="rowData" wx:for="{{userList}}">
+    <view class="title">标题: {{item.title}}</view>
+    <view class="time">时间：{{item.posttime}}</view>
+  </view>
+</view>

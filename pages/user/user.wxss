@@ -1,0 +1,13 @@
+.listContainer{
+  padding: 30rpx;
+}
+
+.rowData{
+  margin: 50rpx 0rpx;
+  padding-bottom: 30rpx ;
+  border-bottom: 2rpx solid rgba(19, 5, 5, 0.3);
+}
+
+.time{
+  margin-top: 20rpx;
+}
