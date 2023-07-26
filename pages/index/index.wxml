@@ -1,4 +1,6 @@
 
+<MyHeader title="index"></MyHeader>
+
 <view class="box" hover-class="boxHover" hover-start-time="0" hover-stay-time="200">
 
   <view class="content" hover-class="contentHover" start-time="0" hover-stay-time="200" hover-stop-propagation></view>

@@ -24,12 +24,39 @@ Page({
       },
       data : {
         "num": 3, 
-        "page": 1 
+        "page": 1 ,
+        content : ""
       },
       success : res=>{
         this.setData({
           userList : res.data.data
         })
+      }
+    })
+  },
+
+  subData(){
+    console.log(this.data.content);
+    wx.request({
+      url: 'https://tea.qingnian8.com/demoArt/add',
+      method: 'post',
+      header : {
+        "Content-Type" : "application/json"
+      },
+      data : {
+        "title": this.data.content, 
+        "author": "wqc" 
+      },
+      success : res=>{
+          console.log('res' , res);
+          wx.showToast({
+            title: res.data.errMsg,
+            icon: "none"
+          })
+          if(res.data.errCode != 0){
+            return ;
+          }
+          this.getData()
       }
     })
   },

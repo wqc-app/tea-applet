@@ -1,0 +1,6 @@
+.title{
+  text-align: center;
+  background: #eeeeee;
+  margin: 30rpx 0;
+  padding: 30rpx 0;
+}

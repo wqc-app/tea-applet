@@ -1,5 +1,6 @@
 
-
+<MyHeader></MyHeader>
+<input type="text" model:value="{{content}}" bindconfirm="subData" placeholder="请输入内容"/>
 <view class="listContainer">
   <view class="rowData" wx:for="{{userList}}">
     <view class="title">标题: {{item.title}}</view>

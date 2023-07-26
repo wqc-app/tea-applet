@@ -11,3 +11,9 @@
 .time{
   margin-top: 20rpx;
 }
+
+input{
+  background: #eee;
+  margin: 20rpx;
+  padding: 20rpx;
+}
